@@ -17,7 +17,27 @@ body{
                  table-layout: fixed;
                  border-spacing: 0;   }
 .background td { padding: 0;          }
-.lava          { background: rgb(255, 100, 100); }
+
+
+.lava{ 
+  background-image: url(/examen/assets/lava.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: rotation 1s infinite linear;
+
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+
 .wall          { background: white;   }
 
 .actor  { position: absolute;  }
@@ -37,6 +57,41 @@ body{
   
 }
 
+.pausa{
+  background-color: transparent;
+  background-image: url(/examen/assets/pause.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 0;
+  position: left;
+  height: 40px;
+  width: 40px;
+  text-align-last: top;
+  z-index: 10;
+  position: absolute;
+  text-align: left;
+  right: 25px;
+  margin-top: 10px;
+}
+
+.reset{
+  background-image: url(/examen/assets/restart.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  position: left;
+  text-align-last: top;
+  z-index: 10;
+  position: absolute;
+  text-align: left;
+  right: 80px;
+  margin-top: 10px;
+  border: 0;
+}
 .lost .player {
   background: rgb(160, 64, 64);
 }
