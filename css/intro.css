@@ -3,23 +3,53 @@
     padding: 0px;
 }
 
+
+body{
+    background-image: url(/examen/assets/fondo_intro.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 @font-face{
     font-family: boy;
     src: url(/examen/assets/Road_Rage.otf);
-
 }
 
-
-body{
-    background-image: url(/examen/assets/);
+@font-face{
+    font-family: boton;
+    src: url(/examen/assets/Mayblossom\ DEMO.otf);
 }
+
 
 .titulo{
     font-family: boy;
-    font-size: 12vh;
+    font-size: 11vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(#e21607, #351512);
+    background: linear-gradient(#f03629, #81433d);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(39, 2, 2);
+    text-shadow: 0 0 30px rgb(177, 67, 67);
+
 }
+
+.boton{
+    font-family: boton;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    transition: 0.3s;
+
+}
+
+.boton:hover{
+    color: red;
+    font-size: 120px;
+    border-color: red;
+    border-width: 40px;
+}
+
