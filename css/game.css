@@ -1,0 +1,45 @@
+body{
+
+  background: linear-gradient(#632c27, #240000,#1e0000);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;  
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5%;
+
+}
+
+.background    {
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+.lava          { background: rgb(255, 100, 100); }
+.wall          { background: white;   }
+
+.actor  { position: absolute;  }
+.coin   { background: rgb(241, 229, 89); }
+.player { background-image: url(/examen/assets/player.gif);
+  background-size: 3em;
+  background-position: center;
+  border-radius: 50px;
+              
+}
+
+.game {
+  overflow: hidden;
+  max-height: 10%;
+  max-width: 50%;
+  position: relative;
+  
+}
+
+.lost .player {
+  background: rgb(160, 64, 64);
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}

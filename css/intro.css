@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face{
+    font-family: boy;
+    src: url(/examen/assets/Road_Rage.otf);
+
+}
+
+
+body{
+    background-image: url(/examen/assets/);
+}
+
+.titulo{
+    font-family: boy;
+    font-size: 12vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#e21607, #351512);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
