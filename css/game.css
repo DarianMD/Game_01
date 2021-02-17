@@ -36,9 +36,18 @@ body{
 	}
 }
 
+.fire{
+  background-image: url(/examen/assets/fuego.gif);
+  background-repeat: no-repeat;
+  background-size:contain;
 
+}
 
-.wall          { background: white;   }
+.wall { 
+  background-image: url(/examen/assets/suelo.PNG);  
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
 
 .actor  { position: absolute;  }
 .coin   { background: rgb(241, 229, 89); }
