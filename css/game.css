@@ -12,13 +12,10 @@ body{
   margin-top: 5%;
 
 }
-
 .background    {
                  table-layout: fixed;
                  border-spacing: 0;   }
 .background td { padding: 0;          }
-
-
 .lava{ 
   background-image: url(/examen/assets/lava.png); 
   background-repeat: no-repeat;
@@ -26,7 +23,6 @@ body{
   animation: rotation 1s infinite linear;
 
 }
-
 @keyframes rotation {
 	from {
 		transform: rotate(0deg);
@@ -48,7 +44,6 @@ body{
   background-repeat: no-repeat;
   background-size: cover; 
 }
-
 .actor  { position: absolute;  }
 .coin   { background: rgb(241, 229, 89); }
 .player { background-image: url(/examen/assets/player.gif);
@@ -69,41 +64,46 @@ body{
 .pausa{
   background-color: transparent;
   background-image: url(/examen/assets/pause.png);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border: 0;
-  position: left;
-  height: 40px;
-  width: 40px;
-  text-align-last: top;
-  z-index: 10;
-  position: absolute;
-  text-align: left;
-  right: 25px;
-  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+  margin-top: 5px;
+  border-radius: 50px;
 }
 
 .reset{
   background-image: url(/examen/assets/restart.png);
   background-color: transparent;
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 40px;
-  width: 40px;
-  position: left;
-  text-align-last: top;
-  z-index: 10;
-  position: absolute;
-  text-align: left;
-  right: 80px;
-  margin-top: 10px;
-  border: 0;
+  height: 50px;
+  width: 50px;
+  margin-top: 5px;
+  border-radius: 50px;
+
 }
 .lost .player {
   background: rgb(160, 64, 64);
 }
 .won .player {
   box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
+
+
+@font-face{
+  font-family: boton;
+  src: url(/examen/assets/Mayblossom\ DEMO.otf);
+}
+
+.nivel{
+  font-family: boton;
+  font-size: 5vh;
+}
+
+.vidas{
+  font-family: boton;
+  font-size: 5vh;
+  margin-top: 100px;
+
 }
