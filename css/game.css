@@ -17,7 +17,7 @@ body{
                  border-spacing: 0;   }
 .background td { padding: 0;          }
 .lava{ 
-  background-image: url(/examen/assets/lava.png); 
+  background-image: url(/Game_01/assets/lava.png); 
   background-repeat: no-repeat;
   background-size: cover;
   animation: rotation 1s infinite linear;
@@ -33,20 +33,20 @@ body{
 }
 
 .fire{
-  background-image: url(/examen/assets/fuego.gif);
+  background-image: url(/Game_01/assets/fuego.gif);
   background-repeat: no-repeat;
   background-size:contain;
 
 }
 
 .wall { 
-  background-image: url(/examen/assets/suelo.PNG);  
+  background-image: url(/Game_01/assets/suelo.PNG);  
   background-repeat: no-repeat;
   background-size: cover; 
 }
 .actor  { position: absolute;  }
 .coin   { background: rgb(241, 229, 89); }
-.player { background-image: url(/examen/assets/player.gif);
+.player { background-image: url(/Game_01/assets/player.gif);
   background-size: 3em;
   background-position: center;
   border-radius: 50px;
@@ -63,7 +63,7 @@ body{
 
 .pausa{
   background-color: transparent;
-  background-image: url(/examen/assets/pause.png);
+  background-image: url(/Game_01/assets/pause.png);
   background-size: cover;
   background-position: center;
   height: 50px;
@@ -73,7 +73,7 @@ body{
 }
 
 .reset{
-  background-image: url(/examen/assets/restart.png);
+  background-image: url(/Game_01/assets/restart.png);
   background-color: transparent;
   background-size: cover;
   background-position: center;
@@ -93,7 +93,7 @@ body{
 
 @font-face{
   font-family: boton;
-  src: url(/examen/assets/Mayblossom\ DEMO.otf);
+  src: url(/Game_01/assets/Mayblossom\ DEMO.otf);
 }
 
 .nivel{

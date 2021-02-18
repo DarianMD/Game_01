@@ -92,7 +92,7 @@ var Lava = class Lava {
   }
 }
 
-Lava.prototype.size = new Vec(1, 1);
+Lava.prototype.size = new Vec(2, 2);
 
 var Coin = class Coin {
   constructor(pos, basePos, wobble) {
@@ -349,14 +349,31 @@ function runLevel(level, Display) {
   });
 }
 
+
 async function runGame(plans, Display) {
+  document.getElementById("reset").addEventListener("click", () => { document.location.reload(); })
+  document.getElementById("pausa").addEventListener("click", (pausa) )
+  let lives = 3;
 
   for (let level = 0; level < plans.length;) {
     let status = await runLevel(new Level(plans[level]),
-                                Display);
-    if (status == "won")
-    level++;
+      Display);
+    if (status == "won") {
+      level++;
+    }
+    else  {
+      lives--;
+    } 
+  }
+
+  if(lives < 0){
+    level = 0;
   }
 
   console.log("You've won!");
 }
+
+function pausa() {
+  let event = new Event("keydown");
+  event.key = "Escape";
+  window.dispatchEvent(event);}

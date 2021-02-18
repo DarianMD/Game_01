@@ -5,7 +5,7 @@
 
 
 body{
-    background-image: url(/examen/assets/fondo_intro.jpg);
+    background-image: url(/Game_01/assets/fondo_intro.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -14,12 +14,12 @@ body{
 
 @font-face{
     font-family: boy;
-    src: url(/examen/assets/Road_Rage.otf);
+    src: url(/Game_01/assets/Road_Rage.otf);
 }
 
 @font-face{
     font-family: boton;
-    src: url(/examen/assets/Mayblossom\ DEMO.otf);
+    src: url(/Game_01/assets/Mayblossom\ DEMO.otf);
 }
 
 
